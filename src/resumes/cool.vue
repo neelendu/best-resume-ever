@@ -51,6 +51,10 @@
               <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
             </div>
 
+             <div class="section-link">
+              <i class="section-link__icon material-icons">location_city</i>{{ person.contact.city }}
+            </div>
+
             <a
               class="section-link"
               :href="contactLinks.email">
@@ -93,6 +97,21 @@
       </div>
 
       <div class="content__right">
+        <div class="section">
+          <div class="section-headline">
+            <i class="section-headline__icon material-icons">info</i>{{ lang.summerys }}
+          </div>
+          <div class="section-content">
+            <a v-for="(summery, index) in person.summerys"
+            :key="index"
+            class="section-content__item"
+            :href="summery.url">
+            <span class="section-content__subheader">{{ summery.name }}
+            </span>
+            <br>
+            </a>
+          </div>
+        </div>
         <div class="section">
           <div class="section-headline">
             <i class="section-headline__icon material-icons">work</i>{{ lang.experience }}
@@ -195,11 +214,11 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 @accent-color: #34495E;
 @banner-color: #42b883;
-@banner-height: 120px;
+@banner-height: 100px;
 @picture-size: 120px;
 @picture-offset: 35px;
 @base-padding: 30px;
-@left-column-width: 240px;
+@left-column-width: 235px;
 
 a {
   color: inherit;

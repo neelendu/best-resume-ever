@@ -53,6 +53,7 @@ const convert = async () => {
     console.log('Exporting ...');
     try {
         const fullDirectoryPath = path.join(__dirname, '../pdf/');
+        console.log(fullDirectoryPath);
         const directories = getResumesFromDirectories();
         directories.forEach(async (dir) => {
             const browser = await puppeteer.launch({
