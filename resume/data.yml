@@ -49,20 +49,22 @@ education:
 skills:
 - name: Python 2.7,3.6
   level: 99
-- name: C
-  level: 95
 - name: Django
   level: 97
 - name: Flask
   level: 93
-- name: C#
-  level: 60
 - name: JavaScript
   level: 80
-- name: WCF
+- name: C
   level: 70
+- name: C#
+  level: 80
+- name: WCF
+  level: 80
 - name: Node.js
-  level: 99
+  level: 70
+- name: Angular.js
+  level: 70
 - name: MySql
   level: 99
 - name: Redis
@@ -72,7 +74,20 @@ skills:
 - name: Gunicorn
   level: 99
 - name: Data Science
+  level: 70
+- name: AWS
+  level: 80
+- name: AWS Lambda
+  level: 80
+- name: rabbitmq
+  level: 80
+- name: Git
   level: 99
+- name: svn
+  level: 99
+- name : linux
+  level : 90
+  
 knowledge: Also proficient in Python and C# and Illustrator, grew up bilingual
   (English and Klingon).
 summerys:
@@ -99,7 +114,7 @@ projects:
 
 - name: Coding Assessment
   platform: Python, Flask, Celery
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+  description:  HirePro-AMS is a recruitment domain project which is based on SaaS and multi-tenancy. It is an Applicant Management Tool, which is used to conduct on campus and lateral (off -campus) recruitment.
   url: https://github.com/salomonelli/best-resume-ever
 
 - name: Video and Digital Interview
