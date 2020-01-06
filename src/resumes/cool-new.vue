@@ -37,7 +37,7 @@
               <span class="squarred-grid-item">
                 {{ skill.name }}
                 <div class="star-ratings-sprite">
-              <span :style="{ width: skill.level +'%' }" class="star-ratings-sprite-rating"></span>
+              <span :style="{ width: skill.level +'%' }" class="star-ratings-sprite__rating"></span>
               </div>
               </span>
              
@@ -112,7 +112,6 @@
             :href="summery.url">
             <span class="section-content__subheader">{{ summery.name }}
             </span>
-            <br>
             </a>
           </div>
         </div>
@@ -174,6 +173,13 @@
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
               <span class="section-content__text"> {{ project.description }} </span>
+              <div  v-if="project.responsibilities" class="res-content">
+                  <span class="res-content__subheader">Responsiblities</span>
+                  <a v-for="(res,index) in project.responsibilities" :key="index"
+                  class="res-content__item" :href="project.url">
+                  <span class="res-content__text"> {{ res.name }} </span>
+                  </a>
+              </div> 
             </a>
           </div>
         </div>
@@ -401,6 +407,7 @@ a {
 
 .grid-item {
   padding-right: 5px;
+  page-break-inside:auto;
 }
 
 .squarred-grid-item {
@@ -409,10 +416,12 @@ a {
   color: white;
   margin-top: 5px;
   padding: 5px;
+  page-break-inside: auto;
 }
 
 .star-ratings-sprite {
-  background: url("../../resume/star-rating-sprite.png") repeat-x;
+  /*background: url('../../resume/star.png') repeat-x;*/
+  background: url('../../resume/star.png') repeat-x;
   font-size: 0;
   height: 21px;
   line-height: 0;
@@ -420,14 +429,49 @@ a {
   text-indent: -999em;
   width: 110px;
   margin: 0 auto;
+  float: right;
+  page-break-inside:avoid;
   
-  &-rating {
-    background: url("../../resume/star-rating-sprite.png") repeat-x;
+  &__rating {
+    background: url('../../resume/star.png') repeat-x;
     background-position: 0 100%;
     float: left;
     height: 21px;
     display:block;
+    page-break-inside:avoid;
   }
   
+}
+.res-content {
+   margin-top: 2px;
+   padding-left: 1px;
+   font-size: 14px;
+   &__item {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 15px;
+  }
+
+  &__header {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  &__subheader {
+    display: block;
+    font-weight: 400;
+  }
+
+  &__plain,
+  &__text {
+    display: block;
+    font-size: 12px;
+
+    &--light {
+      font-size: 12px;
+    }
+  }
+
 }
 </style>

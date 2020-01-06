@@ -3,7 +3,7 @@ name:
   first: Neelendu
   middle:
   last: Kumar
-about: Software Engineer with 5+ years of experience in development of SaaS based products in B2B space with expertise in Python(Django/Flask), DOT NET(C#/WCF) and Javascript(NodeJS).
+about: B.E.from computer science and Skilled IT professional with over 5+ years of industry experience in development of SaaS based products in B2B space with expertise in Python(Django/Flask), DOT NET(C#/WCF) and Javascript(NodeJS).I am having a good exposure of understanding the business requirements and converting them to scalable software architectures.
 position: Software Engineer
 
 birth:
@@ -14,7 +14,7 @@ experience:
 - company: HirePro Consulting Pvt Ltd
   position: Senior Technical Lead
   timeperiod: since April 2019
-  description: Programming and watching cute cat videos.
+  description: Create team strategy, preparing time plan for deliverables and publishing them to management and customers (in cases of enhancements).
   website: https://example.com
 
 - company: HirePro Consulting Pvt Ltd
@@ -65,10 +65,16 @@ skills:
   level: 70
 - name: Angular.js
   level: 70
+- name: Vue.js
+  level: 70
 - name: MySql
   level: 99
 - name: Redis
   level: 99
+- name: RabbitMQ
+  level: 80
+- name: MongoDB
+  level: 80
 - name: nginx
   level: 99
 - name: Gunicorn
@@ -79,8 +85,6 @@ skills:
   level: 80
 - name: AWS Lambda
   level: 80
-- name: rabbitmq
-  level: 80
 - name: Git
   level: 99
 - name: svn
@@ -88,60 +92,84 @@ skills:
 - name : linux
   level : 90
   
-knowledge: Also proficient in Python and C# and Illustrator, grew up bilingual
-  (English and Klingon).
+knowledge: Good Algorithmic knowledge, strong mathematical background allows for designing/quickly understanding new algorithms.
+
 summerys:
-  - name : 5+ years of Experience in analysis, design and development of client/server, web-based n-tier application and Windows Applications using Python and C# and java script.
-  - name : Extensive experience in Rest Based API development using Django, Flask, WCF.
+  - name : 5+ years of industry Experience in analysis, design and development of backend, web-based n-tier application and Windows Applications using Python, C# and java script.
+  - name : Having Hands-On Experience in Database Programming Skills Like Writing Stored Procedures in MySQL
   - name : Well acquainted with the Software Development Life Cycle. Involved in Impact Design and Estimation of the new changes to be developed.
-  - name : Proficiency with multi-threaded design patterns.
+  - name : Experience with video or screen sharing, bandwidth estimation and congestion control.
+  - name : Experience with NAT and firewall traversal technologies (STUN, ICE, and TURN) also having good exposure with RTP/RTCP  protocals.
   - name : Extensive experience in Agile Methodologies and principles.
+  - name : Worked with the team to investigate design approaches, prototype new technology, and evaluate technical feasibility. 
+  - name : Passioned in Problem Solving, Data structures, and Algorithms and optimizing algorithms - Dynamic Programming, DFS/BFS etc along with Machine Learning algorithms.
   - name : Having good exposure of Data science and Machine learning tools like Pandas, NumPy, SK Learn and Tensor Flow.
   - name : Having Hands on Experience in Implementation of Priority Queue using Celery and NSQ.
-  - name : Good understanding of socket programming with python.
-  - name : Familiarity with RTP/RTCP and SIP.
-  - name : Experience with bandwidth estimation and congestion control
-  - name : Experience with NAT and firewall traversal technologies (STUN, ICE, and TURN).
-  - name : Experience with video or screen sharing
   - name : Experienced in configuring and deploying applications on IIS 8,  Gunicorn, Nginx, Tornado.
-  - name : Having Hands-On Experience in Database Programming Skills Like Writing Stored Procedures in MySQL
+  - name : Knowledge of Coding Standards, version management (Git/Bit bucket or similar), Build Process, Packaging, DevOps and CI/CD.
 
 projects:
-- name: Online Assessment 2.0
+- name: Assessment 2.0
   platform: Python, Django, MySql 5.7, redis,rabbitmq, Aws Lambda, Celery
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+  description:   HirePro-Assessment controls the complete assessment management process re- written in Django Framework. It is a SAAS based product with Multi-tenancy architecture built on Python, Django, Node.js.
+  responsibilities:
+    - name: Involved writing Rest based API using Django and python
+    - name: Involved designing and development of multiple assessment analysis reports like Transcript, Leader board etc.
+    - name: Involved database design and architecture.
+    - name: Done asynchronous programming to achieve the scalability and performance.
+    - name: Responsible for Unit & System Testing
+    - name: Involved QA Automation process
+    - name: Designed Database structure and its implementation.
+    - name: Deployment and configuration of the application on IIS 8 and nginx  
+  url: https://ams.hirepro.in
 
-- name: Coding Assessment
-  platform: Python, Flask, Celery
-  description:  HirePro-AMS is a recruitment domain project which is based on SaaS and multi-tenancy. It is an Applicant Management Tool, which is used to conduct on campus and lateral (off -campus) recruitment.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Coding Server 
+  platform: Python, Flask, Celery, Golang
+  description: HirePro-Coding server is an online tool to compile and execute various programming languages. It also generates different kinds of report like Cyclomatic-complexity, efficiency using handlebar and Node.js
+  responsibilities:
+    - name: Involved writing Rest based micro-services using Flask and python
+    - name: Involved designing the backend architechure of the server.
+    - name: Involved in Maintenance and new feature implementation 
+    - name: Done asynchronous programming to achieve the scalability and performance.
+    - name: Integrated Celery to achieve queuing the request.
+  url: https://ams.hirepro.in
 
-- name: Video and Digital Interview
+- name: Video Conference App
   platform: Python, Django, JavaScript, Node.js, WebRTC, ffmpeg
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+  responsibilities:
+    - name: Involved the design and architechure of video conferencing app.
+    - name: Managed three member's team.
+    - name: Involved in Maintenance and new feature implementation 
+  url: https://ams.hirepro.in
 
 - name: CRPO
   platform:  Python, Django, MySql 5.7, redis,rabbitmq, Aws Lambda,Celery
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+  url: https://ams.hirepro.in
 
 - name: Mbrace
   platform:  Python, Django, MySql 5.7, redis,rabbitmq, Aws Lambda,Celery
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+  url: https://ams.hirepro.in
 
-
-- name: Online Assessment 1.0
+- name: AMS 1.0
   platform: WCF, C#, DotNet 4.0, IIS, MySQL 5.5
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+  url: https://ams.hirepro.in
+
+- name: Assessment 1.0
+  platform: WCF, C#, DotNet 4.0, IIS, MySQL 5.5
+  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+  url: https://ams.hirepro.in
+
+
+
 
 - name: Camaleone
   platform: WCF, C#, DotNet 4.0, IIS, MySQL 5.5
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+  url: https://ams.hirepro.in
 
 hobbies:
 - name: Video Games
@@ -152,7 +180,7 @@ hobbies:
   iconClass: fa fa-pencil
   url: https://example.com
 
-contributions:
+contributions1:
 - name: best-resume-ever
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
   url: https://github.com/salomonelli/best-resume-ever

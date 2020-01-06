@@ -108,7 +108,6 @@
             :href="summery.url">
             <span class="section-content__subheader">{{ summery.name }}
             </span>
-            <br>
             </a>
           </div>
         </div>
@@ -156,7 +155,7 @@
           </div>
         </div>
 
-        <div
+        <!--<div
           v-if="person.projects"
           class="section">
           <div class="section-headline">
@@ -170,6 +169,30 @@
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
               <span class="section-content__text"> {{ project.description }} </span>
+            </a>
+          </div>
+        </div>-->
+         <div
+          v-if="person.projects"
+          class="section">
+          <div class="section-headline">
+            <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
+          </div>
+
+          <div class="section-content-proj-grid">
+            <a v-for="(project, index) in person.projects" :key="index"
+              class="section-content__item-proj-grid"
+              :href="project.url">
+              <span class="section-content__header"> {{ project.name }} </span>
+              <span class="section-content__subheader">{{ project.platform }}</span>
+              <span class="section-content__text"> {{ project.description }} </span>
+              <div  v-if="project.responsibilities" class="res-content">
+                  <span class="res-content__subheader">Responsiblities</span>
+                  <a v-for="(res,index) in project.responsibilities" :key="index"
+                  class="res-content__item" :href="project.url">
+                  <span class="res-content__text"> {{ res.name }} </span>
+                  </a>
+              </div> 
             </a>
           </div>
         </div>
@@ -198,7 +221,7 @@
       </div>
     </div>
 
-    <img class="picture"/>
+    <!--<img class="picture"/>-->
   </div>
 </template>
 
@@ -214,7 +237,7 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 @accent-color: #34495E;
 @banner-color: #42b883;
-@banner-height: 100px;
+@banner-height: 50px;
 @picture-size: 120px;
 @picture-offset: 35px;
 @base-padding: 30px;
@@ -391,5 +414,43 @@ a {
   color: white;
   margin-top: 5px;
   padding: 5px;
+}
+.res-content {
+   margin-top: 2px;
+   padding-left: 1px;
+   font-size: 14px;
+   &__item {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 15px;
+  }
+
+  &__header {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  &__subheader {
+    display: block;
+    font-weight: 400;
+  }
+
+  &__plain,
+  &__text {
+    display: block;
+    font-size: 12px;
+
+    &--light {
+      font-size: 12px;
+    }
+  }
+
+}
+.section-content-proj-grid {
+  display: grid;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 </style>

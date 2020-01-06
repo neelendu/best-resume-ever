@@ -71,7 +71,8 @@ const convert = async () => {
             }
             await page.pdf({
                 path: fullDirectoryPath + dir.name + '.pdf',
-                format: 'A4'
+                format: 'A4',
+                printBackground: true
             });
             await browser.close();
         });
